@@ -1,0 +1,26 @@
+name: Formula CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Audit Homebrew formulas
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          formulas=(Formula/*.rb)
+          if (( ${#formulas[@]} == 0 )); then
+            echo "No formulas found under Formula/; skipping audit."
+            exit 0
+          fi
+          brew update --quiet
+          brew audit --strict "${formulas[@]}"
