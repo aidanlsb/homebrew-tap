@@ -6,14 +6,14 @@ Homebrew tap for [raven](https://github.com/aidanlsb/raven).
 
 ```bash
 brew tap aidanlsb/tap
-brew install raven
+brew install aidanlsb/tap/rvn
 ```
 
 ## Upgrade
 
 ```bash
 brew update
-brew upgrade raven
+brew upgrade aidanlsb/tap/rvn
 ```
 
 ## Publishing
