@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Homebrew tap for [raven](https://github.com/aidanlsb/raven).
+Homebrew tap for [Raven](https://github.com/aidanlsb/raven) (formula: `rvn`).
 
 ## Install
 
