@@ -5,21 +5,21 @@
 class Rvn < Formula
   desc "Plain markdown notes with custom schemas and annotations for querying"
   homepage "https://github.com/aidanlsb/raven"
-  version "0.0.3"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.3/raven_0.0.3_darwin_x86_64.tar.gz"
-      sha256 "f612d1fe4cacae61983e9ec06b8fd8be7ac4306bd166adfd150f991d31832cac"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.5/raven_0.0.5_darwin_x86_64.tar.gz"
+      sha256 "37fa1ce0932ce11d91ff9fb535a21e31e477bb8f0b4103ddd7e7bde8399a0096"
 
       def install
         bin.install "rvn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.3/raven_0.0.3_darwin_arm64.tar.gz"
-      sha256 "391ce4ee92b1247463030db3482c8ac4d6d61ab17deed2696898e98d43a67768"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.5/raven_0.0.5_darwin_arm64.tar.gz"
+      sha256 "e65be6615409ff667b6ec676cfd77a7a095162304178699df8317a639344a6b2"
 
       def install
         bin.install "rvn"
@@ -29,15 +29,15 @@ class Rvn < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.3/raven_0.0.3_linux_x86_64.tar.gz"
-      sha256 "82d60e2d6b2c7220da89326e1dd056510f83c474ca41a84e38f1cbafefe45a50"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.5/raven_0.0.5_linux_x86_64.tar.gz"
+      sha256 "82593a24e0be056d1bbb1f3412093c30560f6ecac85d494be146703f4fe48d93"
       def install
         bin.install "rvn"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.3/raven_0.0.3_linux_arm64.tar.gz"
-      sha256 "73739e3b8233a844cfec95e4f4e3a1348ea4e33605b2aa19fb0915c7b825c171"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.5/raven_0.0.5_linux_arm64.tar.gz"
+      sha256 "b742fa7193c3bebc8b5472f439759a528f253b896252a8cf270af906de98856f"
       def install
         bin.install "rvn"
       end
