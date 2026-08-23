@@ -5,21 +5,21 @@
 class Rvn < Formula
   desc "Plain markdown notes with custom schemas and annotations for querying"
   homepage "https://github.com/aidanlsb/raven"
-  version "0.0.33"
+  version "0.0.34"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.33/raven_0.0.33_darwin_x86_64.tar.gz"
-      sha256 "18cde567daa72574588e299345c2d87ce91e7f92644eb644b77ba9afecfca2ba"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.34/raven_0.0.34_darwin_x86_64.tar.gz"
+      sha256 "37bcb28bf2fc14fbfd9f74733db2b9d68e859442e4f36adb67a610c76d33c547"
 
       def install
         bin.install "rvn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.33/raven_0.0.33_darwin_arm64.tar.gz"
-      sha256 "456a3a16dbf47f77a9945c5501c42def97dbf368317b89dae4fc4cb92b01a0b6"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.34/raven_0.0.34_darwin_arm64.tar.gz"
+      sha256 "068c847c84ccdecde25720a737ce7fe1894a2a093215d37b543a102873c52b8b"
 
       def install
         bin.install "rvn"
@@ -29,15 +29,15 @@ class Rvn < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.33/raven_0.0.33_linux_x86_64.tar.gz"
-      sha256 "b8895b02976dffa1e2bd6759e2840d61d53bffa70e878dc5c5308055aa7f8125"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.34/raven_0.0.34_linux_x86_64.tar.gz"
+      sha256 "aea2f20f91d89b9eb02599838313412887d1a946e94545775c7fb11026e94f12"
       def install
         bin.install "rvn"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aidanlsb/raven/releases/download/v0.0.33/raven_0.0.33_linux_arm64.tar.gz"
-      sha256 "5dcfba2bcd307fa66fb1c93244e1852085912b86692b2785338a7e2a36d09b28"
+      url "https://github.com/aidanlsb/raven/releases/download/v0.0.34/raven_0.0.34_linux_arm64.tar.gz"
+      sha256 "a86a3d90854584fcdec635f1e0861fdc69b13d30b307286ac67f2b35dbfbafc3"
       def install
         bin.install "rvn"
       end
